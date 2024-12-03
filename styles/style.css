@@ -4,10 +4,10 @@ body{
 }
 
 main{
-    margin: 5em;
+    margin: 8em 8em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 5em 5em;
+    grid-template-rows: 12em 12em;
     gap: 2em;
 }
 
@@ -20,7 +20,11 @@ main{
 .card-user{
     background-color: #5747EA;
     border-radius: 1em;
-    grid-row: 1/2;
+    
+}
+
+.card-user-grid{
+    grid-row: span 2;
 }
 /* user card */
 
