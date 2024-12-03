@@ -1,0 +1,74 @@
+body{
+    background-color: #0E1323;
+    color: white;
+}
+
+main{
+    margin: 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5em 5em;
+    gap: 2em;
+}
+
+.card-body-bg{
+    background-color: #1C204B;
+    border-radius: 1em;
+}
+
+/* user card */
+.card-user{
+    background-color: #5747EA;
+    border-radius: 1em;
+    grid-row: 1/2;
+}
+/* user card */
+
+/* work card */
+.work-card{
+    background-color: #FF8B64;
+    border-radius: 1em;
+}
+/* work card */
+
+/* play card */
+.play-card{
+    background-color: #55C2E6;
+    border-radius: 1em;
+}
+/* play card */
+
+/* study card */
+.study-card{
+    background-color: #FF5E7D;
+    border-radius: 1em;
+}
+/* study card */
+
+/* exercise card */
+.exercise-card{
+    background-color: #4BCF82;
+    border-radius: 1em;
+    grid-column: 2;
+}
+/* exercise card */
+
+/* social card */
+.social-card{
+    background-color: #7335D2;
+    border-radius: 1em;
+    grid-column: 3;
+}
+/* social card */
+
+/* self care card */
+.selfcare-card{
+    background-color: #F1C75B;
+    border-radius: 1em;
+    grid-column: 4;
+}
+/* self care card */
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
