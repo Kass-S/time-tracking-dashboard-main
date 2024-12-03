@@ -1,24 +1,37 @@
+:root{
+    --bg-color: #0E1323;
+    --card-color: #1C204B;
+    --user-color: #5747EA;
+    --work-orange: #FF8B64;
+    --play-blue: #55C2E6;
+    --study-red: #FF5E7D;
+    --exercise-green: #4BCF82;
+    --social-purple: #7335D2;
+    --selfcare-yello: #F1C75B;
+}
+
+
 body{
-    background-color: #0E1323;
+    background-color: var(--bg-color);
     color: white;
 }
 
 main{
-    margin: 6em 12em;
+    margin: 7em 12em;
     display: grid;
     grid-template-columns: 16em 16em 16em 16em;
-    grid-template-rows: 14em 14em;
+    grid-template-rows: 15em 15em;
     gap: 2em;
 }
 
 .card-body-bg{
-    background-color: #1C204B;
+    background-color: var(--card-color);
     border-radius: 1em;
 }
 
 /* user card */
 .card-user{
-    background-color: #5747EA;
+    background-color: var(--user-color);
     border-radius: 1em;
 }
 
@@ -28,13 +41,18 @@ main{
 
 .card-user-grid{
     display: grid;
-    grid-template-rows: 1.5fr .5fr;
+    grid-template-rows: 1.4fr .6fr;
+}
+
+.user-card-image{
+    border-radius: 50%;
+    border: 2px solid white;
 }
 /* user card */
 
 /* work card */
 .work-card{
-    background-color: #FF8B64;
+    background-color: var(--work-orange);
     border-radius: 1em;
 }
 
@@ -50,7 +68,7 @@ main{
 
 /* play card */
 .play-card{
-    background-color: #55C2E6;
+    background-color: var(--play-blue);
     border-radius: 1em;
 }
 
@@ -66,7 +84,7 @@ main{
 
 /* study card */
 .study-card{
-    background-color: #FF5E7D;
+    background-color: var(--study-red);
     border-radius: 1em;
 }
 
@@ -82,7 +100,7 @@ main{
 
 /* exercise card */
 .exercise-card{
-    background-color: #4BCF82;
+    background-color: var(--exercise-green);
     border-radius: 1em;
     grid-column: 2;
 }
@@ -99,7 +117,7 @@ main{
 
 /* social card */
 .social-card{
-    background-color: #7335D2;
+    background-color: var(--social-purple);
     border-radius: 1em;
     grid-column: 3;
 }
@@ -116,7 +134,7 @@ main{
 
 /* self care card */
 .selfcare-card{
-    background-color: #F1C75B;
+    background-color: var(--selfcare-yello);
     border-radius: 1em;
     grid-column: 4;
 }
