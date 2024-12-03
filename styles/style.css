@@ -60,6 +60,10 @@ p{
     font-weight: 400;
 }
 
+.sub-text-color{
+    color: var(--sub-color);
+}
+
 /* user card */
 .card-user{
     background-color: var(--user-color);
@@ -76,9 +80,11 @@ p{
 }
 
 .user-card-image{
+    margin: 2em 30px;
     border-radius: 50%;
     border: 3px solid white;
-    width: 25%;
+    box-shadow: 0 .3em .2em #00000035;
+    width: 30%;
 }
 
 .day-week-month{
