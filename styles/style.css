@@ -7,12 +7,19 @@
     --study-red: #FF5E7D;
     --exercise-green: #4BCF82;
     --social-purple: #7335D2;
-    --selfcare-yello: #F1C75B;
+    --selfcare-yellow: #F1C75B;
+    --sub-color: #BBC0FF;
+    --day-week-month-color: #7078C9;
 }
 
+@font-face{
+    font-family: 'Rubik';
+    src: url(/fonts/Rubik-VariableFont_wght.ttf);
+}
 
 body{
     background-color: var(--bg-color);
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
     color: white;
 }
 
@@ -46,7 +53,12 @@ main{
 
 .user-card-image{
     border-radius: 50%;
-    border: 2px solid white;
+    border: 3px solid white;
+    width: 25%;
+}
+
+.day-week-month{
+    color: var(--day-week-month-color);
 }
 /* user card */
 
@@ -134,7 +146,7 @@ main{
 
 /* self care card */
 .selfcare-card{
-    background-color: var(--selfcare-yello);
+    background-color: var(--selfcare-yellow);
     border-radius: 1em;
     grid-column: 4;
 }
