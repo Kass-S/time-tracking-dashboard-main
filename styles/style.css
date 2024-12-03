@@ -36,6 +36,30 @@ main{
     border-radius: 1em;
 }
 
+.margin{
+    margin-left: 30px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 300;
+    margin: .5em 0 .3em;
+}
+
+h3{
+    font-weight: 500;
+}
+
+p{
+    font-weight: 400;
+}
+
 /* user card */
 .card-user{
     background-color: var(--user-color);
