@@ -41,8 +41,25 @@ main{
     background-color: var(--card-hover);
 }
 
+.ellipsis-hover:hover{
+    background-image: white;
+}
+
 .margin{
-    margin-left: 30px;
+    margin-left: 40px;
+}
+
+.no-bottom{
+    margin-bottom: 0;
+}
+
+.margin-top{
+    margin-top: 1.6em;
+}
+
+.title-icon-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 h1{
