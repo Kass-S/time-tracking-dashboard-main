@@ -1,5 +1,6 @@
 @import url("../styles/userCard/userCard.css");
 @import url("../styles/workCard/workCard.css");
+@import url("../styles/playCard/playCard.css");
 
 :root{
     --bg-color: #0E1323;
@@ -27,6 +28,24 @@ body{
     color: white;
 }
 
+h2{
+    font-size: 50px;
+    font-weight: 300;
+    margin: .5em 0 .3em;
+}
+
+h3{
+    font-weight: 500;
+}
+
+p{
+    font-weight: 400;
+}
+
+.sub-text-color{
+    color: var(--sub-color);
+}
+
 main{
     margin: 7em 12em;
     display: grid;
@@ -43,6 +62,12 @@ main{
 .card-body-bg:hover{
     background-color: var(--card-hover);
 }
+
+.title-icon-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .ellipsis-hover{
     fill: #BBC0FF;
 }
@@ -67,50 +92,6 @@ main{
 .margin-top{
     margin-top: 1.6em;
 }
-
-.title-icon-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-h2{
-    font-size: 50px;
-    font-weight: 300;
-    margin: .5em 0 .3em;
-}
-
-h3{
-    font-weight: 500;
-}
-
-p{
-    font-weight: 400;
-}
-
-.sub-text-color{
-    color: var(--sub-color);
-}
-
-
-
-/* play card */
-.play-card{
-    background-color: var(--play-blue);
-    background-image: url(/images/icon-play.svg);
-    background-repeat: no-repeat;
-    background-position: 90% -3%;
-    border-radius: 1em;
-}
-
-.play-card-grid{
-    display: grid;
-    grid-template-rows: .4fr 1.6fr;
-}
-
-.play-card-grid-item-1{
-    grid-row: 2;
-}
-/* play card */
 
 /* study card */
 .study-card{
@@ -272,10 +253,12 @@ p{
     }
     /* work card */
     
-
+    /* play card */
     .play-card{
         grid-row: 4;
     }
+    /* play card */
+    
 
     .study-card{
         grid-row: 5;
