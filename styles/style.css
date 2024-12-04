@@ -255,3 +255,41 @@ p{
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+@media (max-width: 376px){
+    main{
+        margin: .5em 1em;
+        grid-template-columns: .7fr;
+        grid-template-rows: 15em 15em 15em 15em 15em 15em 15em;
+    }
+
+    .card-user-item{
+        grid-row: 1;
+    }
+
+    .work-card{
+        grid-row: 2;
+    }
+
+    .play-card{
+        grid-row: 3;
+    }
+
+    .study-card{
+        grid-row: 4;
+    }
+
+    .exercise-card{
+        grid-row: 5;
+        grid-column: 1;
+    }
+
+    .social-card{
+        grid-row: 6;
+        grid-column: 1;
+    }
+
+    .selfcare-card{
+        grid-column: 1;
+        grid-row: 7;
+    }
+}
