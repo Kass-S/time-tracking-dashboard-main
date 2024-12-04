@@ -20,6 +20,7 @@ let socialPrevious = document.getElementById('socialPrevious');
 let selfcareCurrent = document.getElementById('selfcareCurrent');
 let selfcarePrevious = document.getElementById('selfcarePrevious');
 
+weeklyTime()
 
 dailyBtn.addEventListener('click', function(){
     dailyBtn.className = 'day-week-month day-week-month-active'
@@ -70,12 +71,23 @@ function weeklyTime(){
     fetch('./data.json')
     .then(response => response.json())
     .then(data => {
-        console.log(data[0].timeframes.weekly); 
-        console.log(data[1].timeframes.weekly);
-        console.log(data[2].timeframes.weekly);
-        console.log(data[3].timeframes.weekly);
-        console.log(data[4].timeframes.weekly);
-        console.log(data[5].timeframes.weekly);
+        workCurrent.innerText = data[0].timeframes.weekly.current + "hrs";
+        workPrevious.innerText = ` Last Week - ${data[0].timeframes.weekly.current} hrs`;
+
+        playCurrent.innerText = data[1].timeframes.weekly.current + "hrs";
+        playPrevious.innerText = ` Last Week - ${data[1].timeframes.weekly.current} hrs`;
+
+        studyCurrent.innerText = data[2].timeframes.weekly.current + "hrs";
+        studyPrevious.innerText = ` Last Week - ${data[2].timeframes.weekly.current} hrs`;
+
+        exerciseCurrent.innerText = data[3].timeframes.weekly.current + "hrs";
+        exercisePrevious.innerText = ` Last Week - ${data[3].timeframes.weekly.current} hrs`;
+
+        socialCurrent.innerText = data[4].timeframes.weekly.current + "hrs";
+        socialPrevious.innerText = ` Last Week - ${data[4].timeframes.weekly.current} hrs`;
+
+        selfcareCurrent.innerText = data[5].timeframes.weekly.current + "hrs";
+        selfcarePrevious.innerText = ` Last Week - ${data[5].timeframes.weekly.current} hrs`;
     })
 }
 
@@ -83,11 +95,22 @@ function monthlyTime(){
     fetch('./data.json')
     .then(response => response.json())
     .then(data => {
-        console.log(data[0].timeframes.monthly); 
-        console.log(data[1].timeframes.monthly);
-        console.log(data[2].timeframes.monthly);
-        console.log(data[3].timeframes.monthly);
-        console.log(data[4].timeframes.monthly);
-        console.log(data[5].timeframes.monthly);
+        workCurrent.innerText = data[0].timeframes.monthly.current + "hrs";
+        workPrevious.innerText = ` Last Month - ${data[0].timeframes.monthly.current} hrs`;
+
+        playCurrent.innerText = data[1].timeframes.monthly.current + "hrs";
+        playPrevious.innerText = ` Last Month - ${data[1].timeframes.monthly.current} hrs`;
+
+        studyCurrent.innerText = data[2].timeframes.monthly.current + "hrs";
+        studyPrevious.innerText = ` Last Month - ${data[2].timeframes.monthly.current} hrs`;
+
+        exerciseCurrent.innerText = data[3].timeframes.monthly.current + "hrs";
+        exercisePrevious.innerText = ` Last Month - ${data[3].timeframes.monthly.current} hrs`;
+
+        socialCurrent.innerText = data[4].timeframes.monthly.current + "hrs";
+        socialPrevious.innerText = ` Last Month - ${data[4].timeframes.monthly.current} hrs`;
+
+        selfcareCurrent.innerText = data[5].timeframes.monthly.current + "hrs";
+        selfcarePrevious.innerText = ` Last Month - ${data[5].timeframes.monthly.current} hrs`;
     })
 }
