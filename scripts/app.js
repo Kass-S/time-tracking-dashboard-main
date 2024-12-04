@@ -46,12 +46,23 @@ function dailyTime(){
     fetch('./data.json')
     .then(response => response.json())
     .then(data => {
-        console.log(data[0].timeframes.daily); 
-        console.log(data[1].timeframes.daily);
-        console.log(data[2].timeframes.daily);
-        console.log(data[3].timeframes.daily);
-        console.log(data[4].timeframes.daily);
-        console.log(data[5].timeframes.daily);
+        workCurrent.innerText = data[0].timeframes.daily.current + "hrs";
+        workPrevious.innerText = ` Yesterday - ${data[0].timeframes.daily.current} hrs`;
+
+        playCurrent.innerText = data[1].timeframes.daily.current + "hrs";
+        playPrevious.innerText = ` Yesterday - ${data[1].timeframes.daily.current} hrs`;
+
+        studyCurrent.innerText = data[2].timeframes.daily.current + "hrs";
+        studyPrevious.innerText = ` Yesterday - ${data[2].timeframes.daily.current} hrs`;
+
+        exerciseCurrent.innerText = data[3].timeframes.daily.current + "hrs";
+        exercisePrevious.innerText = ` Yesterday - ${data[3].timeframes.daily.current} hrs`;
+
+        socialCurrent.innerText = data[4].timeframes.daily.current + "hrs";
+        socialPrevious.innerText = ` Yesterday - ${data[4].timeframes.daily.current} hrs`;
+
+        selfcareCurrent.innerText = data[5].timeframes.daily.current + "hrs";
+        selfcarePrevious.innerText = ` Yesterday - ${data[5].timeframes.daily.current} hrs`;
     })
 }
 

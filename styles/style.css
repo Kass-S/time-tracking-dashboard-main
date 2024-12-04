@@ -40,9 +40,13 @@ main{
 .card-body-bg:hover{
     background-color: var(--card-hover);
 }
+.ellipsis-hover{
+    fill: #BBC0FF;
+}
 
 .ellipsis-hover:hover{
-    background-image: white;
+    fill: white;
+    cursor: pointer;
 }
 
 .margin{
