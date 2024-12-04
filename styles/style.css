@@ -1,3 +1,6 @@
+@import url("../styles/userCard/userCard.css");
+@import url("../styles/workCard/workCard.css");
+
 :root{
     --bg-color: #0E1323;
     --card-color: #1C204B;
@@ -70,12 +73,6 @@ main{
     grid-template-columns: 1fr 1fr;
 }
 
-h1{
-    font-size: 40px;
-    font-weight: 300;
-    margin: 0;
-}
-
 h2{
     font-size: 50px;
     font-weight: 300;
@@ -94,68 +91,7 @@ p{
     color: var(--sub-color);
 }
 
-/* user card */
-.card-body-user{
-    background-color: var(--card-color);
-    border-radius: 1em;
-}
 
-.card-user{
-    background-color: var(--user-color);
-    border-radius: 1em;
-}
-
-.card-user-item{
-    grid-row: span 2;
-}
-
-.card-user-grid{
-    display: grid;
-    grid-template-rows: 1.4fr .6fr;
-}
-
-.user-card-image{
-    margin: 2em 30px 1em;
-    border-radius: 50%;
-    border: 3.5px solid white;
-    box-shadow: 0 .3em .3em #00000035;
-    width: 80px;
-}
-
-.day-week-month{
-    margin: 22px 0px;
-    color: var(--day-week-month-color);
-    text-decoration: none;
-}
-
-.day-week-month:hover{
-    color: white;
-    cursor: pointer;
-}
-
-.day-week-month-active{
-    color: white;
-}
-/* user card */
-
-/* work card */
-.work-card{
-    background-color: var(--work-orange);
-    background-image: url(/images/icon-work.svg);
-    background-repeat: no-repeat;
-    background-position: 90% -5%;
-    border-radius: 1em;
-}
-
-.work-card-grid{
-    display: grid;
-    grid-template-rows: .4fr 1.6fr;
-}
-
-.work-card-grid-item-1{
-    grid-row: 2;
-}
-/* work card */
 
 /* play card */
 .play-card{
@@ -267,11 +203,6 @@ p{
     .margin-ellipsis{
         margin-left: 90px;
     }
-
-    h1{
-        font-size: 24px;
-        margin: 0;
-    }
     
     h2{
         font-size: 30px;
@@ -281,22 +212,56 @@ p{
     main{
         margin: 4em 1em;
         grid-template-columns: 1fr;
-        grid-template-rows: 12em 4em 12em 12em 12em 12em 12em 12em;
+        grid-template-rows: 8em 2em 12em 12em 12em 12em 12em 12em;
+    }
+
+    /* user card */
+    h1{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .user-margin{
+        margin: 10px 5px;
+    }
+
+    .card-user-grid{
+        display: grid;
+        grid-template-rows: 1.4fr .6fr;
+    }
+
+    .card-user{
+        margin: 0;
+    }
+
+    .user-card-image{
+        height: 80px;
+        margin: 15px 25px 1em 15px;
+    }
+
+    .responsive-start{
+        display: flex;
+        justify-content: start;
+        margin: 0;
     }
 
     .responsive-around{
         display: flex;
         justify-content: space-around;
-        margin: 10px 0;
+        margin: 0;
     }
 
     .day-week-month{
-        margin: 10px 0px;
+        margin: 20px 0px;
     }
+    /* user card */
 
+    /* work card */
     .work-card{
         grid-row: 3;
     }
+    /* work card */
+    
 
     .play-card{
         grid-row: 4;

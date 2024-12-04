@@ -1,0 +1,51 @@
+h1{
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.user-margin{
+    margin: 0 40px;
+}
+
+.card-body-user{
+    background-color: var(--card-color);
+    border-radius: 1em;
+}
+
+.card-user{
+    background-color: var(--user-color);
+    border-radius: 1em;
+}
+
+.card-user-item{
+    grid-row: span 2;
+}
+
+.card-user-grid{
+    display: grid;
+    grid-template-rows: 1.4fr .6fr;
+}
+
+.user-card-image{
+    margin: 2em 30px 1em;
+    border-radius: 50%;
+    border: 3.5px solid white;
+    box-shadow: 0 .3em .3em #00000035;
+    width: 80px;
+}
+
+.day-week-month{
+    margin: 22px 0px;
+    color: var(--day-week-month-color);
+    text-decoration: none;
+}
+
+.day-week-month:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.day-week-month-active{
+    color: white;
+}

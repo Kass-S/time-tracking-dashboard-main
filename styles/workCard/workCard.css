@@ -1,0 +1,16 @@
+.work-card{
+    background-color: var(--work-orange);
+    background-image: url(/images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -5%;
+    border-radius: 1em;
+}
+
+.work-card-grid{
+    display: grid;
+    grid-template-rows: .4fr 1.6fr;
+}
+
+.work-card-grid-item-1{
+    grid-row: 2;
+}
