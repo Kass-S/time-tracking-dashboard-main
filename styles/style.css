@@ -1,6 +1,10 @@
 @import url("../styles/userCard/userCard.css");
 @import url("../styles/workCard/workCard.css");
 @import url("../styles/playCard/playCard.css");
+@import url("../styles/studyCard/studyCard.css");
+@import url("../styles/exerciseCard/exerciseCard.css");
+@import url("../styles/socialCard/socialCard.css");
+@import url("../styles/selfcareCard/selfcareCard.css");
 
 :root{
     --bg-color: #0E1323;
@@ -58,7 +62,6 @@ main{
     background-color: var(--card-color);
     border-radius: 1em;
 }
-
 .card-body-bg:hover{
     background-color: var(--card-hover);
 }
@@ -71,7 +74,6 @@ main{
 .ellipsis-hover{
     fill: #BBC0FF;
 }
-
 .ellipsis-hover:hover{
     fill: white;
     cursor: pointer;
@@ -80,98 +82,15 @@ main{
 .margin{
     margin-left: 40px;
 }
-
 .margin-ellipsis{
     margin-left: 50px;
 }
-
 .no-bottom{
     margin-bottom: 0;
 }
-
 .margin-top{
     margin-top: 1.6em;
 }
-
-/* study card */
-.study-card{
-    background-color: var(--study-red);
-    background-image: url(/images/icon-study.svg);
-    background-repeat: no-repeat;
-    background-position: 90% -5%;
-    border-radius: 1em;
-}
-
-.study-card-grid{
-    display: grid;
-    grid-template-rows: .4fr 1.6fr;
-}
-
-.study-card-grid-item-1{
-    grid-row: 2;
-}
-/* study card */
-
-/* exercise card */
-.exercise-card{
-    background-color: var(--exercise-green);
-    background-image: url(/images/icon-exercise.svg);
-    background-repeat: no-repeat;
-    background-position: 90% 0%;
-    border-radius: 1em;
-    grid-column: 2;
-}
-
-.exercise-card-grid{
-    display: grid;
-    grid-template-rows: .4fr 1.6fr;
-}
-
-.exercise-card-grid-item-1{
-    grid-row: 2;
-}
-/* exercise card */
-
-/* social card */
-.social-card{
-    background-color: var(--social-purple);
-    background-image: url(/images/icon-social.svg);
-    background-repeat: no-repeat;
-    background-position: 90% -10%;
-    border-radius: 1em;
-    grid-column: 3;
-}
-
-.social-card-grid{
-    display: grid;
-    grid-template-rows: .4fr 1.6fr;
-}
-
-.social-card-grid-item-1{
-    grid-row: 2;
-}
-/* social card */
-
-/* self care card */
-.selfcare-card{
-    background-color: var(--selfcare-yellow);
-    background-image: url(/images/icon-self-care.svg);
-    background-repeat: no-repeat;
-    background-position: 90% -5%;
-    border-radius: 1em;
-    grid-column: 4;
-}
-
-.selfcare-card-grid{
-    display: grid;
-    grid-template-rows: .4fr 1.6fr;
-}
-
-.selfcare-card-grid-item-1{
-    grid-row: 2;
-}
-/* self care card */
-
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -180,7 +99,6 @@ main{
     .margin{
         margin-left: 30px;
     }
-    
     .margin-ellipsis{
         margin-left: 100px;
     }
@@ -235,7 +153,6 @@ main{
         justify-content: start;
         margin: 0;
     }
-
     .responsive-around{
         display: flex;
         justify-content: space-around;
@@ -259,23 +176,30 @@ main{
     }
     /* play card */
     
-
+    /* study card */
     .study-card{
         grid-row: 5;
     }
-
+    /* study card */
+    
+    /* exercise card */
     .exercise-card{
         grid-row: 6;
         grid-column: 1;
     }
-
+    /* exercise card */
+    
+    /* social card */
     .social-card{
         grid-row: 7;
         grid-column: 1;
     }
-
+    /* social card */
+    
+    /* self care card */
     .selfcare-card{
         grid-row: 8;
         grid-column: 1;
     }
+    /* self care card */
 }

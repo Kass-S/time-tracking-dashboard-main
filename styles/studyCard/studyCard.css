@@ -1,0 +1,16 @@
+.study-card{
+    background-color: var(--study-red);
+    background-image: url(/images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -5%;
+    border-radius: 1em;
+}
+
+.study-card-grid{
+    display: grid;
+    grid-template-rows: .4fr 1.6fr;
+}
+
+.study-card-grid-item-1{
+    grid-row: 2;
+}

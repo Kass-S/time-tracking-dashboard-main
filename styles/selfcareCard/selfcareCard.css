@@ -1,0 +1,17 @@
+.selfcare-card{
+    background-color: var(--selfcare-yellow);
+    background-image: url(/images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -5%;
+    border-radius: 1em;
+    grid-column: 4;
+}
+
+.selfcare-card-grid{
+    display: grid;
+    grid-template-rows: .4fr 1.6fr;
+}
+
+.selfcare-card-grid-item-1{
+    grid-row: 2;
+}
