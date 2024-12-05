@@ -170,10 +170,6 @@ main{
         grid-column: span 2;
     }
 
-    .user-margin{
-        margin: 10px 5px;
-    }
-
     .responsive-around{
         display: flex;
         justify-content: space-around;
@@ -473,5 +469,11 @@ main{
 @media (max-width: 350px){
     .margin-ellipsis{
         margin-left: 80px;
+    }
+}
+
+@media(max-width: 326px){
+    main{
+        grid-template-rows: 8em 2em 9.5em 9em 9em 9em 9em 9em;
     }
 }
