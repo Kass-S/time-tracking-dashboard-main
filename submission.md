@@ -1,6 +1,6 @@
 Kassandra Spacek
 
-12/*/24
+12/5/24
 
 Recreate the prototype from the figma given by Fronted Mentor.
 
