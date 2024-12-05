@@ -95,7 +95,196 @@ main{
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media (max-width: 376px){
+@media (max-width: 1025px){
+    main{
+        margin: 4em 5em;
+        display: grid;
+        grid-template-columns: 16em 16em 16em;
+        grid-template-rows: 15em 15em 15em;
+        gap: 2em;
+    }
+
+    /* user card */
+    .card-user-item{
+        grid-column: 1;
+    }
+
+    .user-margin{
+        margin: 10px 5px;
+    }
+
+    /* user card */
+
+    /* work card */
+    .work-card{
+        grid-column: 2;
+    }
+    /* work card */
+    
+    /* play card */
+    .play-card{
+        grid-column: 3;
+    }
+    /* play card */
+    
+    /* study card */
+    .study-card{
+        grid-column: 2;
+    }
+    /* study card */
+    
+    /* exercise card */
+    .exercise-card{
+        grid-column: 3;
+    }
+    /* exercise card */
+    
+    /* social card */
+    .social-card{
+        grid-column: 2;
+    }
+    /* social card */
+    
+    /* self care card */
+    .selfcare-card{
+        grid-column: 3;
+    }
+    /* self care card */
+}
+
+@media (max-width:769px){
+    main{
+        margin: 4em 1em;
+        grid-template-columns: .3fr 1.4fr .3fr;
+        grid-template-rows: 12em 6em 14em 14em 14em 14em 14em 14em;
+    }
+
+    .margin-ellipsis{
+        margin-left: 150px;
+    }
+
+    /* user card */
+    h1{
+        font-size: 36px;
+        margin: 0;
+    }
+
+    .card-user-item{
+        grid-column: 2;
+    }
+
+    .responsive-around{
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .responsive-start{
+        display: flex;
+        justify-content: start;
+        margin: 0;
+    }
+
+    .user-card-image{
+        height: 100px;
+        width: 100px;
+        margin: 4em 1em 1em 2em;
+    }
+
+    .user-margin{
+        margin: 3em 10px;
+    }
+
+    .day-week-month{
+        margin: 2em 0px;
+    }
+    /* user card */
+
+    /* work card */
+    .work-card{
+        grid-row: 3;
+        grid-column: 2;
+    }
+    /* work card */
+    
+    /* play card */
+    .play-card{
+        grid-row: 4;
+        grid-column: 2;
+    }
+    /* play card */
+    
+    /* study card */
+    .study-card{
+        grid-row: 5;
+        grid-column: 2;
+    }
+    /* study card */
+    
+    /* exercise card */
+    .exercise-card{
+        grid-row: 6;
+        grid-column: 2;
+    }
+    /* exercise card */
+    
+    /* social card */
+    .social-card{
+        grid-row: 7;
+        grid-column: 2;
+    }
+    /* social card */
+    
+    /* self care card */
+    .selfcare-card{
+        grid-row: 8;
+        grid-column: 2;
+    }
+    /* self care card */
+}
+
+@media (max-width: 700px){
+    .margin-ellipsis{
+        margin-left: 120px;
+    }
+}
+
+@media (max-width: 607px){
+    .margin-ellipsis{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 538px){
+    main{
+        margin: 4em .5em;
+        grid-template-columns: .1fr 1.8fr .1fr;
+    }
+
+    .margin-ellipsis{
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 426px){
+
+    .user-card-image{
+        height: 90px;
+        margin: 3em 1em 1em .5em;
+    }
+}
+
+@media(max-width: 406px){
+    main{
+        grid-template-rows: 11em 6em 14em 14em 14em 14em 14em 14em;
+    }
+
+    .margin-ellipsis{
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 380px){
     .margin{
         margin-left: 30px;
     }
@@ -130,6 +319,10 @@ main{
         margin: 0;
     }
 
+    .card-user-item{
+        grid-column: 1;
+    }
+
     .user-margin{
         margin: 10px 5px;
     }
@@ -148,58 +341,54 @@ main{
         margin: 15px 25px 1em 15px;
     }
 
-    .responsive-start{
-        display: flex;
-        justify-content: start;
-        margin: 0;
-    }
-    .responsive-around{
-        display: flex;
-        justify-content: space-around;
-        margin: 0;
-    }
-
     .day-week-month{
         margin: 20px 0px;
+    }
+
+    .responsive-around{
+        margin: 0;
     }
     /* user card */
 
     /* work card */
     .work-card{
-        grid-row: 3;
+        grid-column: 1;
     }
     /* work card */
     
     /* play card */
     .play-card{
-        grid-row: 4;
+        grid-column: 1;
     }
     /* play card */
     
     /* study card */
     .study-card{
-        grid-row: 5;
+        grid-column: 1;
     }
     /* study card */
     
     /* exercise card */
     .exercise-card{
-        grid-row: 6;
         grid-column: 1;
     }
     /* exercise card */
     
     /* social card */
     .social-card{
-        grid-row: 7;
         grid-column: 1;
     }
     /* social card */
     
     /* self care card */
     .selfcare-card{
-        grid-row: 8;
         grid-column: 1;
     }
     /* self care card */
+}
+
+@media (max-width: 350px){
+    .margin-ellipsis{
+        margin-left: 80px;
+    }
 }
