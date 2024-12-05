@@ -1,0 +1,116 @@
+/* work */
+.work-card{
+    background-color: var(--work-orange);
+    background-image: url(/images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -5%;
+    border-radius: 1em;
+}
+
+.work-card-grid{
+    display: grid;
+    grid-template-rows: .4fr 1.6fr;
+}
+
+.work-card-grid-item-1{
+    grid-row: 2;
+}
+/* work */
+
+/* play */
+.play-card{
+    background-color: var(--play-blue);
+    background-image: url(/images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -3%;
+    border-radius: 1em;
+}
+
+.play-card-grid{
+    display: grid;
+    grid-template-rows: .4fr 1.6fr;
+}
+
+.play-card-grid-item-1{
+    grid-row: 2;
+}
+/* play */
+
+/* study */
+.study-card{
+    background-color: var(--study-red);
+    background-image: url(/images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -5%;
+    border-radius: 1em;
+}
+
+.study-card-grid{
+    display: grid;
+    grid-template-rows: .4fr 1.6fr;
+}
+
+.study-card-grid-item-1{
+    grid-row: 2;
+}
+/* study */
+
+/* exercise */
+.exercise-card{
+    background-color: var(--exercise-green);
+    background-image: url(/images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 0%;
+    border-radius: 1em;
+    grid-column: 2;
+}
+
+.exercise-card-grid{
+    display: grid;
+    grid-template-rows: .4fr 1.6fr;
+}
+
+.exercise-card-grid-item-1{
+    grid-row: 2;
+}
+/* exercise */
+
+/* social */
+.social-card{
+    background-color: var(--social-purple);
+    background-image: url(/images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -10%;
+    border-radius: 1em;
+    grid-column: 3;
+}
+
+.social-card-grid{
+    display: grid;
+    grid-template-rows: .4fr 1.6fr;
+}
+
+.social-card-grid-item-1{
+    grid-row: 2;
+}
+/* social */
+
+/* selfcare */
+.selfcare-card{
+    background-color: var(--selfcare-yellow);
+    background-image: url(/images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -5%;
+    border-radius: 1em;
+    grid-column: 4;
+}
+
+.selfcare-card-grid{
+    display: grid;
+    grid-template-rows: .4fr 1.6fr;
+}
+
+.selfcare-card-grid-item-1{
+    grid-row: 2;
+}
+/* selfcare */

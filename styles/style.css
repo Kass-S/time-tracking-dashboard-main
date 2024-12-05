@@ -1,10 +1,5 @@
-@import url("../styles/userCard/userCard.css");
-@import url("../styles/workCard/workCard.css");
-@import url("../styles/playCard/playCard.css");
-@import url("../styles/studyCard/studyCard.css");
-@import url("../styles/exerciseCard/exerciseCard.css");
-@import url("../styles/socialCard/socialCard.css");
-@import url("../styles/selfcareCard/selfcareCard.css");
+@import url("../styles/timeCards.css");
+@import url("../styles/userCard.css");
 
 :root{
     --bg-color: #0E1323;
