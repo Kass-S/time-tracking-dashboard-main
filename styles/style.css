@@ -420,6 +420,7 @@ main{
 
     .user-card-image{
         height: 80px;
+        width: 80px;
         margin: 15px 25px 1em 15px;
     }
 
