@@ -30,6 +30,7 @@ body{
     background-color: var(--bg-color);
     font-family: 'Rubik', Arial, Helvetica, sans-serif;
     color: white;
+    margin: 0;
 }
 
 h2{
@@ -95,13 +96,23 @@ main{
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media (max-width: 1025px){
+@media(max-width: 1351px){
+    main{
+        margin: 6em 5em;
+    }
+}
+
+@media(max-width: 1266px){
+    main{
+        margin: 6em 2em;
+    }
+}
+
+@media (max-width: 1170px){
     main{
         margin: 4em 5em;
-        display: grid;
         grid-template-columns: 16em 16em 16em;
         grid-template-rows: 15em 15em 15em;
-        gap: 2em;
     }
 
     /* user card */
@@ -150,6 +161,67 @@ main{
         grid-column: 3;
     }
     /* self care card */
+}
+
+@media (max-width: 950px){
+    main{
+        margin: 5em 11em;
+        grid-template-columns: 16em 16em;
+        grid-template-rows: 15em 6em 15em 15em 15em;
+    }
+
+    /* user card */
+    .card-user-item{
+        grid-column: span 2;
+    }
+
+    .user-margin{
+        margin: 10px 5px;
+    }
+
+    /* user card */
+
+    /* work card */
+    .work-card{
+        grid-column: 1;
+    }
+    /* work card */
+    
+    /* play card */
+    .play-card{
+        grid-column: 2;
+    }
+    /* play card */
+    
+    /* study card */
+    .study-card{
+        grid-column: 1;
+    }
+    /* study card */
+    
+    /* exercise card */
+    .exercise-card{
+        grid-column: 2;
+    }
+    /* exercise card */
+    
+    /* social card */
+    .social-card{
+        grid-column: 1;
+    }
+    /* social card */
+    
+    /* self care card */
+    .selfcare-card{
+        grid-column: 2;
+    }
+    /* self care card */
+}
+
+@media(max-width: 850px){
+    main{
+        margin: 5em 9em;
+    }
 }
 
 @media (max-width:769px){
